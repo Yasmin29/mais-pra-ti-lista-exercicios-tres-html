@@ -1,0 +1,175 @@
+<!-- 4. CSS Básico e Box Model - 
+Crie um arquivo styles.css e vincule-o em 
+index.html: 
+- Defina cores de fundo (background-color) 
+e de texto (color) para <header>, 
+<main> e <footer>. 
+- Para cada uma dessas seções, 
+aplique margin, padding e border de forma a 
+evidenciar seus contornos. 
+-->
+
+<!--
+5. Seletores e Propriedades - No mesmo styles.css, adicione: 
+- Um estilo para todas as tags <h2> que aumente a font-size e aplique text
+decoration: underline. 
+- Uma classe .destaque que deixe o texto em itálico (font-style: italic) e aplique 
+um leve background-color. 
+- Um ID #importante que adicione border-top mais espessa em um parágrafo 
+específico. 
+-->
+
+<!--
+7. Menu Hamburger - implemente um menu “hamburger” que: 
+- Apareça apenas em telas com largura ≤ 600 px. 
+- Oculte a navegação padrão e abra/feche o menu ao ser clicado.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banho e tosa nossos amigos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <button
+                id="navToggle"
+                class="nav-toggle"
+                aria-controls="navMenu"     
+                aria-expanded="false"       
+                aria-label="Abrir menu"     
+            >
+                &#9776; 
+            </button>
+
+            <nav id="navMenu" class= "nav" role="navigation">
+                <a href="#sobre-nos">Sobre nós</a>
+                <a href="#nossos-servicos">Nossos serviços</a>
+                <a href="#contato">Contato</a>
+                <a href="../exercicio-6/tosas.html">Tosas</a>
+            </nav>
+        </div>      
+    </header>
+
+    <main >
+        <div class="imagem-e-texto">
+            <div class="esquerda">
+                <img src="assets/images/cachorro-de-toca.png">
+            </div>
+        
+            <div class="direita">
+                <h1>Nossos Amigos</h1>
+                <h2 id = "sobre-nos">Sobre nós:</h2>
+                <p>
+                    A Nossos Amigos é especializada em oferecer serviços de banho e tosa de qualidade para cães e gatos de todos os portes e raças. 
+                    Nosso compromisso é garantir que cada pet tenha uma experiência tranquila, segura e cheia de carinho, voltando para casa limpo, cheiroso e feliz. 
+                    
+                    <br>
+                
+                    Contamos com uma equipe experiente e apaixonada por animais, que entende as necessidades de cada bichinho e realiza o atendimento com paciência, cuidado e muito amor. 
+                    Usamos produtos de qualidade, higienização rigorosa dos espaços e técnicas adequadas para valorizar a beleza e o bem-estar do seu melhor amigo. 
+
+                    <br>
+                
+                    Mais do que um simples serviço, nosso banho e tosa é um momento de cuidado e atenção, onde cada detalhe faz a diferença. 
+                    Nosso objetivo é que o seu pet se sinta confortável e que você fique tranquilo, sabendo que ele está em boas mãos. 
+                    
+                    <br>
+            
+                    Traga seu pet para a Nossos Amigos e descubra como é bom contar com profissionais que realmente amam o que fazem.
+                    Aqui, cada animal é tratado como parte da família!
+                </p>
+            </div>
+        </div>
+
+        <h2 id = 'nossos-servicos'>Nossos serviços:</h2>
+        <p class="destaque">
+            Na Banho e Tosa Nossos Amigos, cada animal é tratado com carinho, paciência e respeito. Nossa missão é proporcionar uma experiência tranquila e segura para cães e gatos, deixando-os limpos, cheirosos e felizes após cada visita.
+            Oferecemos os seguintes serviços:
+        </p>
+
+        <h4>
+            🐾 Banho Tradicional
+        </h4>    
+        
+        <p>
+            shampoos e condicionadores de alta qualidade, específicos para o tipo de pelagem e pele de cada pet. O banho inclui escovação, secagem com equipamentos silenciosos e finalização com perfume suave, para garantir o conforto do animal.
+        </p> 
+
+        <h3>
+            ✂️ Tosa Higiênica
+        </h3>
+        
+        <p>
+            a remoção dos pelos em áreas específicas como barriga, patas e região íntima, ajudando a manter a higiene e prevenir problemas de pele, sempre com muito cuidado e delicadeza.
+        </p> 
+
+        <h3>
+            🐩 Tosa Estética / Padrão da Raça
+        </h3>
+        
+        <p>
+            Para raças que exigem cortes específicos, oferecemos a tosa estética, feita por profissionais experientes, com técnicas que valorizam a beleza natural do pet e seguem o padrão ideal de cada raça.
+        </p>
+        
+        <h3>
+            🧼 Higienização de Ouvidos e Corte de Unhas
+        </h3>
+            
+        <p>
+            Incluímos o cuidado com a limpeza das orelhas e o corte das unhas,
+            promovendo bem-estar e prevenindo desconfortos e infecções.
+        </p>    
+
+        <h3>
+            🎀 Finalização com Acessórios (opcional)
+        </h3>    
+
+        <p>
+            Seu pet pode sair ainda mais charmoso com lacinhos, 
+            gravatinhas ou bandanas, 
+            tudo opcional e feito com muito carinho.
+        </p>
+            
+        <h3>
+            Por que escolher a Nossos Amigos?
+        </h3>
+
+        <ul>
+            <li>
+                 Atendimento individualizado
+            </li>
+            <li>
+                Ambiente limpo, seguro e tranquilo
+            </li>
+            <li>
+                Profissionais apaixonados por pets
+            </li>
+            <li>
+                Uso de produtos dermatologicamente testados
+            </li>
+            <li>
+                Compromisso com o bem-estar animal
+            </li>
+        </ul>
+            
+        <p id = "importante">    
+            Agende um horário e venha conhecer de perto o cuidado que faz a diferença!
+            <br>
+            Banho e Tosa Nossos Amigos — onde seu pet é tratado como parte da família.
+        </p>
+    </main>
+    <footer>
+        <div id = "contato">
+            <a id = 'instagram' href="https://www.instagram.com/petnossosamigos/">Instagram</a>
+            <p>Telefone: (00) 99999-9999</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

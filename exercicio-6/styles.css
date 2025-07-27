@@ -1,0 +1,61 @@
+/* Reset básico */
+body {
+  font-family: Arial;
+  background-color: #7FDBB6;
+}
+/* Contêiner Flexbox */
+.galeria-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Grid da galeria */
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Estilo de cada item */
+.item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.item p {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsividade com media queries */
+@media (max-width: 1024px) {
+  .galeria-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .galeria-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .galeria-grid {
+    grid-template-columns: 1fr;
+  }
+}

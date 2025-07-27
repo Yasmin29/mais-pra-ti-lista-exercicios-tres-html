@@ -1,0 +1,166 @@
+/* Estilização geral da página */
+body {
+  background-color: #FAFAFA;
+  margin: 0;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #FAFAFA;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+  border: 2px solid #A8DADC;
+  border-radius: 10px;
+
+}
+
+/* Navegação */
+nav {
+  margin-bottom: 15px;
+  display: flex;
+}
+
+nav a {
+  background-color: #7FDBB6;
+  color: #ffffff;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  
+}
+
+nav a:hover {
+  background-color: #A8DADC;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor:pointer;
+  transition: transform var(--transition-speed);
+}
+
+@media(max-width: 600px)
+{
+    .nav {
+      display: none;
+      left: 0;
+      right: 0;
+    }
+
+    .nav-toggle{
+      display: flex;
+    }
+
+    .nav.open {
+      display: flex; /* Mostra o menu quando a classe 'open' for adicionada */
+      top: 100%;
+    }
+}
+
+/* Imagem e texto lado a lado */
+.imagem-e-texto {
+  display: flex;
+  flex-direction:row;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Imagem principal */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.imagem-e-texto .direita {
+  flex: 1; 
+  min-width: 300px;
+}
+/* Seção principal */
+main {
+  padding: 20px;
+  border: 2px solid #A8DADC;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+/* Textos gerais */
+p {
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* Títulos */
+h1 {
+  color: #7FDBB6;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  color: #4A837E;
+  margin-top: 20px;
+}
+
+h3 {
+  color: #555;
+  margin-top: 20px;
+}
+
+/* Destaque com leve fundo e itálico */
+.destaque {
+  background-color: #e8f6f6;
+  font-style: italic;
+  padding: 10px;
+  border-left: 4px solid #7FDBB6;
+}
+
+/* Parágrafo com borda superior */
+#importante {
+  border-top: 4px solid #7FDBB6;
+  padding-top: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Lista de vantagens */
+ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #f0fdfa;
+  padding: 20px;
+  margin-top: 30px;
+  text-align: center;
+  border: 2px solid #A8DADC;
+  border-radius: 10px;
+  color: #7FDBB6;
+}
+
+footer a {
+  color: #7FDBB6;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
