@@ -4,7 +4,7 @@ Exercicios de HTML do curso de full stack do +praTi de Desenvolvimento Web Bási
 # ✅ Exercícios Realizados
 1. Estrutura com Tags Semânticas (index.html)
 
-    Uso de <header>, <main>, <section> e <footer>.
+    Uso de header, main, section e footer.
 
     Conteúdo de missão, visão e introdução.
 
@@ -14,7 +14,7 @@ Exercicios de HTML do curso de full stack do +praTi de Desenvolvimento Web Bási
 
     Lista ordenada com uma receita passo a passo.
 
-    Bloco <nav> com links externos.
+    Bloco nav com links externos.
 
 3. Formulário de Feedback (feedback.html)
 
