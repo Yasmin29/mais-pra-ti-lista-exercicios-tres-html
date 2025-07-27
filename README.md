@@ -1,4 +1,4 @@
-# mais-pra-ti-lista-exercicios-tres-html
+# Sobre o Projeto
 Exercicios de HTML do curso de full stack do +praTi de Desenvolvimento Web Básico.
 
 # ✅ Exercícios Realizados
